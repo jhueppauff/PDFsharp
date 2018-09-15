@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="!internal\Directives.cs" />
+    <Compile Remove="Forms\PagePreview.cs" />
+    <Compile Remove="Forms\PagePreviewCanvas.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="!internal\Directives.cs" />
+    <None Include="Forms\PagePreviewCanvas.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Forms\PagePreview.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Windows\PagePreview-ag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Windows\PagePreview-wpf.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+
+</Project>

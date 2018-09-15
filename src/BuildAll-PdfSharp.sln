@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFsharp", "PdfSharp\PDFsharp.csproj", "{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}"
 EndProject
@@ -13,6 +13,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfSharp-wpf", "PdfSharp-wpf\PdfSharp-wpf.csproj", "{02FCC0BB-2AA2-43BA-8D2F-66D168B87A1D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfSharp.Charting-wpf", "PdfSharp.Charting-wpf\PdfSharp.Charting-wpf.csproj", "{E6A2734E-0CD6-4210-8AEC-47EE348F8D78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFsharp.core", "PDFsharp.core\PDFsharp.core.csproj", "{06BAB41E-9376-411A-BB05-E2C3C75C574B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -98,7 +100,6 @@ Global
 		{02FCC0BB-2AA2-43BA-8D2F-66D168B87A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02FCC0BB-2AA2-43BA-8D2F-66D168B87A1D}.Debug|ARM.ActiveCfg = Debug|Any CPU
 		{02FCC0BB-2AA2-43BA-8D2F-66D168B87A1D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{02FCC0BB-2AA2-43BA-8D2F-66D168B87A1D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{02FCC0BB-2AA2-43BA-8D2F-66D168B87A1D}.Debug|Win32.ActiveCfg = Debug|Any CPU
 		{02FCC0BB-2AA2-43BA-8D2F-66D168B87A1D}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{02FCC0BB-2AA2-43BA-8D2F-66D168B87A1D}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -114,7 +115,6 @@ Global
 		{E6A2734E-0CD6-4210-8AEC-47EE348F8D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6A2734E-0CD6-4210-8AEC-47EE348F8D78}.Debug|ARM.ActiveCfg = Debug|Any CPU
 		{E6A2734E-0CD6-4210-8AEC-47EE348F8D78}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{E6A2734E-0CD6-4210-8AEC-47EE348F8D78}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{E6A2734E-0CD6-4210-8AEC-47EE348F8D78}.Debug|Win32.ActiveCfg = Debug|Any CPU
 		{E6A2734E-0CD6-4210-8AEC-47EE348F8D78}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{E6A2734E-0CD6-4210-8AEC-47EE348F8D78}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -126,8 +126,35 @@ Global
 		{E6A2734E-0CD6-4210-8AEC-47EE348F8D78}.Release|Win32.ActiveCfg = Release|Any CPU
 		{E6A2734E-0CD6-4210-8AEC-47EE348F8D78}.Release|x64.ActiveCfg = Release|Any CPU
 		{E6A2734E-0CD6-4210-8AEC-47EE348F8D78}.Release|x86.ActiveCfg = Release|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Debug|ARM.Build.0 = Debug|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Debug|Win32.Build.0 = Debug|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Debug|x64.Build.0 = Debug|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Debug|x86.Build.0 = Debug|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Release|ARM.ActiveCfg = Release|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Release|ARM.Build.0 = Release|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Release|Win32.ActiveCfg = Release|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Release|Win32.Build.0 = Release|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Release|x64.ActiveCfg = Release|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Release|x64.Build.0 = Release|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Release|x86.ActiveCfg = Release|Any CPU
+		{06BAB41E-9376-411A-BB05-E2C3C75C574B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {016C5BBE-232A-4A9C-B9EB-7A8AB6CB0A4A}
 	EndGlobalSection
 EndGlobal
